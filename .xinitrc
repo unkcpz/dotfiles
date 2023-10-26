@@ -43,6 +43,10 @@ xrandr --output DP-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --outp
 # https://support.zoom.us/hc/en-us/articles/202082128-Black-Screen-During-Screen-Sharing
 xcompmgr -c -l0 -t0 -r0 -o.00 &
 
+# Disable dmps to avoid screen auto-saver
+# delay the command to sure it load after x is on
+(sleep 10s && xset s off -dpms) &
+
 exec i3 -V >> ~/.config/i3/i3log
 #exec xfce4-session
 

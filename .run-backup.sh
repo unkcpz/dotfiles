@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # These variables should be adjusted after copying the script!!!!!
-INCLUDES=("$HOME/Projects")
+INCLUDES=("$HOME/Projects" "$HOME/Documents")
 EXCLUDES=("**/*.pyc" "**/.tox/*")
 #DRY_RUN="--dry-run"
 
