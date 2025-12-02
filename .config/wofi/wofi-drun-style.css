@@ -1,0 +1,42 @@
+window {
+    background-color: rgba(31, 36, 48, 0.95);
+}
+
+#input {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #D8DEE9;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 20px 60px;
+    font: 14px "Hack Nerd Font";
+}
+
+#entry {
+    color: #D8DEE9;
+    font: 14px "Hack Nerd Font";
+}
+
+#entry:selected {
+    background-color: rgba(229, 233, 240, 0.28);
+    color: #000000;
+    border-radius: 4px;
+}
+
+#entry:active {
+    background-color: rgba(229, 233, 240, 0.28);
+    color: #000000;
+}
+
+#entry.urgent {
+    background-color: #BF616A;
+    color: #000000;
+}
+
+#text {
+    padding-top: 6px;
+}
+
+#main {
+    margin: 10px;
+}
+
