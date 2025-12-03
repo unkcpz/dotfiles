@@ -2,8 +2,6 @@
 
 - [ ] F1-F12 control
 - [ ] power save, lower fan speed etc.
-- [ ] neovim, fzf search can on hidden files. but not `.git`
-- [ ] sway keybinding to restart sway and the waybar.
 - [ ] the accurate font settings.
 
 
