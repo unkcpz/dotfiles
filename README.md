@@ -20,7 +20,7 @@ install `fish`
 sudo pacman -S fish
 ```
 
-TODO: fish need to be reconfig to be clean
+! run `stow fish` to symlink, because stow exclude fish from .config
 
 install tmux
 
