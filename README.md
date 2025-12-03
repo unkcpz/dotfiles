@@ -1,3 +1,13 @@
+## TODOs
+
+- [ ] F1-F12 control
+- [ ] xbacklight control
+- [ ] power save, lower fan speed etc.
+- [ ] neovim, fzf search can on hidden files. but not `.git`
+- [ ] sway keybinding to restart sway and the waybar.
+- [ ] the accurate font settings.
+
+
 ## how to use
 
 to sync run:
@@ -58,10 +68,10 @@ yay -S wdisplays xremap
 # xremap-wlroots
 ```
 
-
 - `xremap` for mapping win+hljk to arrow keys need `$HOME/.config/xremap.yml` 
 - xremap need `sudo usermod -aG input $USER`
 - and xremap need: https://github.com/xremap/xremap?tab=readme-ov-file#arch-linux-1 to be in the uinput (make sure go through every steps)
+- enable mako service: `systemctl --user status mako`, can test by `notify-send "Mako Test" "If you see this, mako is working"`
 
 ### neovim
 
@@ -98,3 +108,9 @@ git submodule add https://github.com/unkcpz/dotnvim nvim
 - and `sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-extra`
 - and `tff-hack` for hack-nerd-font in waybar
 - more important `sudo pacman -S ttf-hack-nerd`
+
+## audio and screen sharing on sway
+
+- `pipewire` and `wireplumber`, `pwvucontrol`
+using sway, I need `xdg-desktop-portal-wlr` the desktop portal backend for wlroots.
+- too make x-org based app (zoom for example) working, need `xorg-xwayland`

@@ -45,7 +45,6 @@ input type:keyboard {
 
 # startup
 exec $browser
-exec mako
 exec sleep 5; systemctl --user start kanshi.service
 exec swaybg -i $bg_image -m fill
 exec nm-applet
