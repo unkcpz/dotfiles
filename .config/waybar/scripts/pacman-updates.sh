@@ -1,3 +1,3 @@
 #!/bin/bash
-count=$(checkupdates 2>/dev/null | wc -l)
+count=$(pacman -Qu | wc -l)
 echo "{\"text\": \"󰏗 $count\", \"tooltip\": \"$count updates available\"}"

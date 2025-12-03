@@ -62,7 +62,7 @@
   "custom/pacman": {
     "format": "({})",
     "exec": "~/.config/waybar/scripts/pacman-updates.sh",
-    "interval": 1800,
+    "interval": 300,
     "return-type": "json"
   }
 

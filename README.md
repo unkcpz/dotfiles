@@ -1,8 +1,8 @@
 ## TODOs
 
-- [ ] F1-F12 control
-- [ ] power save, lower fan speed etc.
+- [ ] neovim, deprecated warnings
 - [ ] the accurate font settings.
+- [ ] move mod+shift+q script
 
 
 ## how to use
@@ -116,3 +116,26 @@ using sway, I need `xdg-desktop-portal-wlr` the desktop portal backend for wlroo
 
 - use `brightnessctl` which is the only tool not from aur
 - requires your user to be in the video and input groups. (done by default)
+
+## thinkpad fan control and power saving using tlp
+
+use `thinkfan` from aur and have `/etc/thinkfan.conf`
+
+```
+sensors:
+  - tpacpi: /proc/acpi/ibm/thermal
+    indices: [0]
+
+fans:
+  - tpacpi: /proc/acpi/ibm/fan
+
+levels:
+  - [0, 0, 50]
+  - ["level auto", 45, 75]
+  - ["level disengaged", 70, 255]
+```
+
+```
+sudo pacman -S tlp tlp-rdw
+```
+
