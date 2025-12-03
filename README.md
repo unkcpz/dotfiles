@@ -14,24 +14,30 @@ stow -D .
 
 ### fish, tmux, atuin
 
-install `fish`
+install `fish`, depend on having:
+
+- cargo (from rust)
+- atuin
+- uv
+- starship (from its website)
+- zoxide (`cargo install zoxide`)
+- ??nvm with version lts installed (`nvm install lts`)
+- eza (`cargo install eza`)
+
+```
+sudo pacman -S uv atuin starship zoxide eza bat
+```
 
 ```
 sudo pacman -S fish
 ```
 
-! run `stow fish` to symlink, because stow exclude fish from .config
+! run `stow fish` to symlink, because stow exclude fish from `.config`
 
 install tmux
 
 ```
 sudo pacman -S tmux
-```
-
-install atuin
-
-```
-sudo pacman -S atuin
 ```
 
 
@@ -52,8 +58,10 @@ yay -S wdisplays xremap
 # xremap-wlroots
 ```
 
-- `swaybg` need `$HOME/.config/wallpaper/rick-and-morty-background.jpg`
+
 - `xremap` for mapping win+hljk to arrow keys need `$HOME/.config/xremap.yml` 
+- xremap need `sudo usermod -aG input $USER`
+- and xremap need: https://github.com/xremap/xremap?tab=readme-ov-file#arch-linux-1 to be in the uinput (make sure go through every steps)
 
 ### neovim
 
