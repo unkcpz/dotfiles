@@ -54,7 +54,7 @@ exec waybar > ~/.cache/waybar.log 2>&1
 exec xremap $xremap
 
 output * bg $bg_image fill
-output eDP-1 scale 1.2
+output eDP-1 scale 1.0
 
 # --- keybinding
 bindsym $mod+Return exec $term

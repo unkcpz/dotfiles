@@ -21,7 +21,7 @@ install `fish`, depend on having:
 - uv
 - starship (from its website)
 - zoxide (`cargo install zoxide`)
-- ??nvm with version lts installed (`nvm install lts`)
+- npm
 - eza (`cargo install eza`)
 
 ```
@@ -91,3 +91,10 @@ I have my neovim config maintain as a separated repo, put here as a submodule.
 ```
 git submodule add https://github.com/unkcpz/jyu.nvim nvim
 ```
+
+## fonts
+
+- `noto-fonts-emoji`
+- and `sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-extra`
+- and `tff-hack` for hack-nerd-font in waybar
+- more important `sudo pacman -S ttf-hack-nerd`
