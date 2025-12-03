@@ -89,7 +89,7 @@ Since I use mason, I need `unzip`, `npm`, `gem`, `wget`, `luarocks`
 I have my neovim config maintain as a separated repo, put here as a submodule.
 
 ```
-git submodule add https://github.com/unkcpz/jyu.nvim nvim
+git submodule add https://github.com/unkcpz/dotnvim nvim
 ```
 
 ## fonts
