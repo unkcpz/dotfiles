@@ -130,9 +130,9 @@ bindsym $mod+Shift+0 move container to workspace "0: AUX-2"
 bindsym $mod+Shift+Left  move window to output left
 bindsym $mod+Shift+Right move window to output right
 
-# Brightness
-bindsym XF86MonBrightnessDown exec light -U 10
-bindsym XF86MonBrightnessUp exec light -A 10
+# Brightness (using brightnessctl)
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 
 # Volume
 bindsym XF86AudioRaiseVolume exec 'pactl set-sink-volume @DEFAULT_SINK@ +1%'

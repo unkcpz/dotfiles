@@ -1,7 +1,6 @@
 ## TODOs
 
 - [ ] F1-F12 control
-- [ ] xbacklight control
 - [ ] power save, lower fan speed etc.
 - [ ] neovim, fzf search can on hidden files. but not `.git`
 - [ ] sway keybinding to restart sway and the waybar.
@@ -114,3 +113,8 @@ git submodule add https://github.com/unkcpz/dotnvim nvim
 - `pipewire` and `wireplumber`, `pwvucontrol`
 using sway, I need `xdg-desktop-portal-wlr` the desktop portal backend for wlroots.
 - too make x-org based app (zoom for example) working, need `xorg-xwayland`
+
+## backlight control
+
+- use `brightnessctl` which is the only tool not from aur
+- requires your user to be in the video and input groups. (done by default)
