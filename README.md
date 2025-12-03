@@ -12,7 +12,28 @@ to unlink all
 stow -D .
 ```
 
-### fish
+### fish, tmux, atuin
+
+install `fish`
+
+```
+sudo pacman -S fish
+```
+
+TODO: fish need to be reconfig to be clean
+
+install tmux
+
+```
+sudo pacman -S tmux
+```
+
+install atuin
+
+```
+sudo pacman -S atuin
+```
+
 
 ### sway
 
