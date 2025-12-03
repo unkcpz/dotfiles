@@ -21,10 +21,10 @@ window#waybar {
 }
 
 #memory, #cpu, #clock, #battery, #network, #pulseaudio {
-  padding: 0 12px;
+  padding: 0 10px;
 }
 
 #tray {
-  padding: 0 12px;
+  padding: 0 10px;
 }
 
