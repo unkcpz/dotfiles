@@ -1,9 +1,7 @@
-## TODOs
+## TODO
 
-- [ ] neovim, deprecated warnings
-- [ ] the accurate font settings.
-- [ ] move mod+shift+q script
-
+- [ ] snapper for snapshot
+- [ ] backup, how?
 
 ## how to use
 
