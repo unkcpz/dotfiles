@@ -139,3 +139,7 @@ levels:
 sudo pacman -S tlp tlp-rdw
 ```
 
+## packages from nix
+
+I have `packages.nix` to maintain a list of packages comes from nix store.
+Then runs: `nix-env -f packages.nix -i`
