@@ -1,7 +1,7 @@
 keymap:
-  - name: "Left Win + h/l/j/k (I use dvorak xremap use orig keycode) to Left/Right/Down/Up Arrow"
+  - name: "Left Win + h/l/g/c (I use dvorak xremap use orig keycode) to Left/Right/Down/Up Arrow"
     remap:
       Super_L-j: left
       Super_L-p: right
-      Super_L-c: Down
-      Super_L-v: Up
+      Super_L-u: Down
+      Super_L-i: Up
