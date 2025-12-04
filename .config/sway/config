@@ -3,6 +3,7 @@ set $term kitty
 set $browser firefox
 set $bg_image $HOME/.config/wallpaper/rick-and-morty-background.jpg
 set $xremap $HOME/.config/xremap.yml
+set $power_menu $HOME/.config/bin/power-menu.sh
 set $lock swaylock -fF -i $bg_image
 
 # In order for XDG_DESKTOP service to start
@@ -58,7 +59,7 @@ output eDP-1 scale 1.0
 # --- keybinding
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+c kill
-bindsym $mod+Shift+q exec $HOME/.bin/power-menu.sh
+bindsym $mod+Shift+q exec $HOME/.config/bin/power-menu.sh
 bindsym $mod+r exec wofi --show run --prompt "Run:" | xargs swaymsg exec --
 bindsym $mod+d exec wofi --show drun --style $HOME/.config/wofi/wofi-drun-style.css
 bindsym $mod+Shift+a exec makoctl dismiss
