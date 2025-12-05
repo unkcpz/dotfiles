@@ -45,6 +45,7 @@ install tmux
 sudo pacman -S tmux
 ```
 
+need `tmux-mem-cpu-load` to show bar, install it from aur.
 
 ### sway
 
@@ -141,3 +142,29 @@ sudo pacman -S tlp tlp-rdw
 
 I have `packages.nix` to maintain a list of packages comes from nix store.
 Then runs: `nix-env -f packages.nix -i`
+
+## vconsole color
+
+```
+[Unit]
+Description=Set VT RGB colors
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/setvtrgb /etc/vtrgb
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+
+with 
+
+`/etc/vtrgb` as
+
+```
+12,46,81,115,149,183,218,252,227,230,220,49,128,49,117,177
+13,47,82,116,150,184,219,253,26,85,160,163,177,130,107,89
+14,48,83,117,151,185,220,254,28,13,96,84,211,189,177,40
+```

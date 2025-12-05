@@ -7,5 +7,5 @@ case "$choice" in
     "Suspend")   systemctl suspend ;;
     "Poweroff")  systemctl poweroff ;;
     "Hibernate") systemctl hibernate ;;
-    "Exit Sway") systemctl exit ;;
+    "Exit Sway") swaymsg   exit ;;
 esac
