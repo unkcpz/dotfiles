@@ -50,7 +50,7 @@ need `tmux-mem-cpu-load` to show bar, install it from aur.
 ### sway
 
 - `sway`, `swaylock`, `swayidle`, `swaybg`
-- `waybar`, `wlsunset`, `network-manager-applet`, `mako`, `xremap`
+- `waybar`, `wlsunset`, `network-manager-applet`, `mako`, `xremap`, `pacman-contrib` (for waybar's pacman update count)
 - `kitty`, `firefox`
 - `wofi`, `slurp`, `grim`
 - aur: wdisplay
