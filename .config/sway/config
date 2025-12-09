@@ -63,7 +63,8 @@ bindsym $mod+Shift+q exec $HOME/.config/bin/power-menu.sh
 bindsym $mod+r exec wofi --show run --prompt "Run:" | xargs swaymsg exec --
 bindsym $mod+d exec wofi --show drun --style $HOME/.config/wofi/wofi-drun-style.css
 bindsym $mod+Shift+a exec makoctl dismiss
-bindsym $mod+Shift+p exec slurp | grim -g - - | tee ~/Pictures/$(date +%s).png | wl-copy
+bindsym XF86SelectiveScreenshot exec slurp | grim -g - - | tee ~/Pictures/$(date +%s).png | wl-copy
+bindsym XF86Display exec ~/.config/bin/reset-displays.sh
 
 # Toggle touchpad with F11
 bindsym F11 exec $HOME/.bin/toggle-touchpad.sh
