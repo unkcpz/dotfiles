@@ -5,6 +5,7 @@ set $bg_image $HOME/.config/wallpaper/rick-and-morty-background.jpg
 set $xremap $HOME/.config/xremap.yml
 set $power_menu $HOME/.config/bin/power-menu.sh
 set $lock swaylock -fF -i $bg_image
+set $reset-displays ~/.config/bin/reset-displays.sh
 
 # In order for XDG_DESKTOP service to start
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
@@ -16,7 +17,7 @@ exec_always swayidle -w \
   timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
   timeout 800 '$lock' \
   timeout 1000 'systemctl suspend' \
-  before-sleep '$lock'
+  before-sleep '$reset-displays && $lock'
 
 # layout
 default_border none
@@ -64,7 +65,7 @@ bindsym $mod+r exec wofi --show run --prompt "Run:" | xargs swaymsg exec --
 bindsym $mod+d exec wofi --show drun --style $HOME/.config/wofi/wofi-drun-style.css
 bindsym $mod+Shift+a exec makoctl dismiss
 bindsym XF86SelectiveScreenshot exec slurp | grim -g - - | tee ~/Pictures/$(date +%s).png | wl-copy
-bindsym XF86Display exec ~/.config/bin/reset-displays.sh
+bindsym XF86Display $reset-displays
 
 # Toggle touchpad with F11
 bindsym F11 exec $HOME/.bin/toggle-touchpad.sh
