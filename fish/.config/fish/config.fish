@@ -1,3 +1,6 @@
+# after fish 4.3
+set --global fish_key_bindings fish_default_key_bindings
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
