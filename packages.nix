@@ -11,4 +11,5 @@ with pkgs;
   nixd
   nixfmt-rfc-style
   devenv
+  maturin
 ]
