@@ -130,8 +130,8 @@ bindsym $mod+Shift+0 move container to workspace "0: AUX-2"
 
 # Move focused window to another output
 
-bindsym $mod+Shift+Left  move window to output left
-bindsym $mod+Shift+Right move window to output right
+bindsym $mod+Shift+Left  move workspace to output left
+bindsym $mod+Shift+Right move workspace to output right
 
 # Brightness (using brightnessctl)
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
