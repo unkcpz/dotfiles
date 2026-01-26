@@ -12,4 +12,5 @@ with pkgs;
   nixfmt-rfc-style
   devenv
   maturin
+  cargo-dist
 ]
