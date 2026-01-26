@@ -85,7 +85,7 @@ and tools for lsp etc.
 
 to copy to clipboard since I use wayland, need `wl-clipboard`
 
-```
+```console
 sudo pacman -S neovim julia rust lua ripgrep stylua fd lazygit rust-analyzer
 sudo pacman -S wl-clipboard
 ```
@@ -94,8 +94,14 @@ Since I use mason, I need `unzip`, `npm`, `gem`, `wget`, `luarocks`
 
 I have my neovim config maintain as a separated repo, put here as a submodule.
 
-```
+```console
 git submodule add https://github.com/unkcpz/dotnvim nvim
+```
+
+To update nvim after it changes and pushed:
+
+```console
+git submodule update --recursive --remote
 ```
 
 ## fonts
