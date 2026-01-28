@@ -12,5 +12,6 @@ with pkgs;
   nixfmt-rfc-style
   devenv
   maturin
+  trunk
   cargo-dist
 ]
