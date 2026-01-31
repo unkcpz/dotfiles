@@ -5,7 +5,7 @@ set $bg_image $HOME/.config/wallpaper/rick-and-morty-background.jpg
 set $xremap $HOME/.config/xremap.yml
 set $power_menu $HOME/.config/bin/power-menu.sh
 set $lock swaylock -fF -i $bg_image
-set $reset-displays ~/.config/bin/reset-displays.sh
+set $reset-displays $HOME/.config/bin/reset-displays.sh
 
 # In order for XDG_DESKTOP service to start
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
@@ -51,7 +51,7 @@ exec sleep 5; systemctl --user start kanshi.service
 exec swaybg -i $bg_image -m fill
 exec nm-applet
 exec wlsunset -l 47.37 -L 8.55 -t 3000 # zurich 47.37/8.55
-exec waybar > ~/.cache/waybar.log 2>&1
+exec waybar > $HOME/.cache/waybar.log 2>&1
 exec xremap $xremap
 
 output * bg $bg_image fill
