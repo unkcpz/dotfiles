@@ -53,6 +53,7 @@ set -x MOZ_ENABLE_WAYLAND 1
 # path management
 set -l my_paths \
     $HOME/.local/bin \
+    $HOME/go/bin \
     $HOME/.cargo/bin \
     $HOME/.nix-profile/bin
     # $HOME/.juliaup/bin \
