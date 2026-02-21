@@ -63,6 +63,7 @@ bindsym $mod+Shift+c kill
 bindsym $mod+Shift+q exec $HOME/.config/bin/power-menu.sh
 bindsym $mod+r exec wofi --show run --prompt "Run:" | xargs swaymsg exec --
 bindsym $mod+d exec wofi --show drun --style $HOME/.config/wofi/wofi-drun-style.css
+bindsym $mod+Shift+d exec wofi --show run --style $HOME/.config/wofi/wofi-drun-style.css
 bindsym $mod+Shift+a exec makoctl dismiss
 bindsym XF86SelectiveScreenshot exec slurp | grim -g - - | tee ~/Pictures/$(date +%s).png | wl-copy
 bindsym XF86Display $reset-displays
