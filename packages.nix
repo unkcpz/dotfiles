@@ -14,4 +14,5 @@ with pkgs;
   maturin
   trunk
   cargo-dist
+  eslint_d
 ]
