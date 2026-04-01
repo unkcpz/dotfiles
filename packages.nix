@@ -15,4 +15,5 @@ with pkgs;
   trunk
   cargo-dist
   eslint_d
+  grpc-health-probe
 ]
