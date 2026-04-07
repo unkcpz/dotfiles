@@ -1,6 +1,9 @@
 # declarative package list for tools not available at arch/aur
 # the path added at end of $PATH
 # Run by: `nix-env -f packages.nix -i`
+
+# update channel by `nix-channel --update`
+
 {
   pkgs ? import <nixpkgs> { },
 }:
