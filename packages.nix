@@ -19,4 +19,5 @@ with pkgs;
   cargo-dist
   eslint_d
   grpc-health-probe
+  graphviz
 ]
