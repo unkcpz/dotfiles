@@ -113,9 +113,9 @@ bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace "7: MAIL"
-bindsym $mod+8 workspace "8: AUX-0"
-bindsym $mod+9 workspace "9: AUX-1"
-bindsym $mod+0 workspace "0: AUX-2"
+bindsym $mod+8 workspace "8: AUX-1"
+bindsym $mod+9 workspace "9: AUX-2"
+bindsym $mod+0 workspace "0: AUX-0"
 
 # Move container to workspace
 bindsym $mod+Shift+1 move container to workspace "1: www"
@@ -125,9 +125,9 @@ bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace "7: MAIL"
-bindsym $mod+Shift+8 move container to workspace "8: AUX-0"
-bindsym $mod+Shift+9 move container to workspace "9: AUX-1"
-bindsym $mod+Shift+0 move container to workspace "0: AUX-2"
+bindsym $mod+Shift+8 move container to workspace "8: AUX-1"
+bindsym $mod+Shift+9 move container to workspace "9: AUX-2"
+bindsym $mod+Shift+0 move container to workspace "0: AUX-0"
 
 # Move focused window to another output
 
