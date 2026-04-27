@@ -20,4 +20,6 @@ with pkgs;
   eslint_d
   grpc-health-probe
   graphviz
+  opencode
+  tree-sitter
 ]
