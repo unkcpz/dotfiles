@@ -5,21 +5,26 @@
 # update channel by `nix-channel --update`
 
 {
+  stablePkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-25.11.tar.gz") {
+    config = { };
+  },
   pkgs ? import <nixpkgs> { },
 }:
 
-with pkgs;
-
-[
+(with stablePkgs; [
+  neovim
+  tree-sitter
   nixd
   nixfmt-rfc-style
-  devenv
-  maturin
   trunk
   cargo-dist
   eslint_d
   grpc-health-probe
-  graphviz
   opencode
-  tree-sitter
-]
+  traceroute
+])
+++ (with pkgs; [
+  devenv
+  maturin
+  graphviz
+])
