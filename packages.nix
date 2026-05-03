@@ -27,4 +27,6 @@
   devenv
   maturin
   graphviz
+  grpcurl
+  bun
 ])
