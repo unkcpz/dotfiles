@@ -18,6 +18,9 @@
   nixfmt-rfc-style
   trunk
   cargo-dist
+  nodejs
+  vtsls
+  firefox
   eslint_d
   grpc-health-probe
   opencode
