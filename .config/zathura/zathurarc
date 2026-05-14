@@ -1,0 +1,3 @@
+set page-v-padding 1
+set scroll-page-aware true
+set selection-clipboard clipboard
