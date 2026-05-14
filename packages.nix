@@ -40,4 +40,5 @@
   bun
   zathura
   zathuraPkgs.zathura_pdf_poppler
+  oidc-agent
 ])
