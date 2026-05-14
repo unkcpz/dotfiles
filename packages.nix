@@ -2,6 +2,8 @@
 # the path added at end of $PATH
 # Run by: `nix-env -f packages.nix -i`
 
+# remove item from list and run: `nix-env -f packages.nix -ir`
+
 # update channel by `nix-channel --update`
 
 {
@@ -25,6 +27,10 @@
   grpc-health-probe
   opencode
   traceroute
+  atuin
+  wget
+  uv
+  vim
 ])
 ++ (with pkgs; [
   devenv
@@ -32,4 +38,6 @@
   graphviz
   grpcurl
   bun
+  zathura
+  zathuraPkgs.zathura_pdf_poppler
 ])
