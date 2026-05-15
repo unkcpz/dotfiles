@@ -5,7 +5,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 
     # atuin for cmd history
-    atuin init fish | source
+    # atuin init fish | source
 
     # alias
     alias cat='bat --style=plain'
