@@ -4,9 +4,6 @@ set --global fish_key_bindings fish_default_key_bindings
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
-    # atuin for cmd history
-    # atuin init fish | source
-
     # alias
     alias cat='bat --style=plain'
     alias ls='eza'
