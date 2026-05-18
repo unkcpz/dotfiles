@@ -22,7 +22,6 @@
   cargo-dist
   nodejs
   vtsls
-  firefox
   eslint_d
   grpc-health-probe
   opencode
@@ -31,6 +30,8 @@
   wget
   uv
   vim
+  netcat-openbsd
+  tmux
 ])
 ++ (with pkgs; [
   devenv
@@ -41,4 +42,7 @@
   zathura
   zathuraPkgs.zathura_pdf_poppler
   oidc-agent
+  xterm
+  bind
+  firefox
 ])
