@@ -47,25 +47,6 @@ set -x XDG_SESSION_DESKTOP sway
 set -x XDG_SESSION_TYPE wayland
 set -x MOZ_ENABLE_WAYLAND 1
 
-# path management
-set -l my_paths \
-    $HOME/.local/bin \
-    $HOME/go/bin \
-    $HOME/.cargo/bin \
-    $HOME/.nix-profile/bin
-    # $HOME/.juliaup/bin \
-    # $HOME/.atuin/bin \
-
-# Ruby Gem path (for htmlbeautifier and others).
-# This require `sudo pacman -S ruby && gem install htmlbeautifier`
-# NOTE: version may differ; verify via `gem env`
-set -l gem_bin "$HOME/.local/share/gem/ruby/3.4.0/bin"
-if test -d $gem_bin
-    set my_paths $gem_bin $my_paths
-end
-
-set -U fish_user_paths $my_paths
-
 function reload
     source ~/.config/fish/config.fish
     echo "Fish config reloaded!"
