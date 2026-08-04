@@ -101,6 +101,7 @@ bindsym $mod+Shift+v split h
 
 # Toggle floating
 bindsym $mod+Shift+space floating toggle
+floating_modifier $mod normal
 
 # Fullscreen
 bindsym $mod+Shift+f fullscreen toggle
