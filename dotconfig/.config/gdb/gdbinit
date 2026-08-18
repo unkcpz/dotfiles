@@ -1,0 +1,16 @@
+# base
+set pagination off
+set print pretty on
+set confirm off
+
+# logging
+set trace-commands on
+set logging file ./gdb.session
+set logging enable on
+
+set history save on
+set history filename ./gdb_history
+set history size 10000
+
+# tui
+tui enable
