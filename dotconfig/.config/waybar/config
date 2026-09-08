@@ -3,7 +3,7 @@
   "position": "top",
   "modules-left": ["sway/workspaces"],
   "modules-center": ["clock", "tray"],
-  "modules-right": ["cpu", "memory", "pulseaudio", "backlight", "network", "battery", "custom/pacman"],
+  "modules-right": ["custom/touchpad-state", "custom/keyboard-layout", "cpu", "memory", "pulseaudio", "backlight", "network", "battery", "custom/pacman"],
 
   "clock": {
     "format": "  {:%a %b %d %H:%M}",
@@ -65,6 +65,20 @@
     "format": "({})",
     "exec": "~/.config/waybar/scripts/pacman-updates.sh",
     "interval": 30,
+    "return-type": "json"
+  },
+
+  "custom/touchpad-state": {
+    "format": "({}) ",
+    "exec": "~/.config/waybar/scripts/touchpad-state-updates.sh",
+    "interval": 1,
+    "return-type": "json"
+  },
+
+  "custom/keyboard-layout": {
+    "format": "({})",
+    "exec": "~/.config/waybar/scripts/xkb-layout-updates.sh",
+    "interval": 1,
     "return-type": "json"
   }
 
