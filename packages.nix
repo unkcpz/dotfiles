@@ -44,4 +44,5 @@
   xterm
   bind
   firefox
+  opencode
 ])
