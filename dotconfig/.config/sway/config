@@ -6,6 +6,8 @@ set $xremap $HOME/.config/xremap.yml
 set $power_menu $HOME/.config/bin/power-menu.sh
 set $lock swaylock -fF -i $bg_image
 set $reset-displays $HOME/.config/bin/reset-displays.sh
+set $toggle-keyboard-layout $HOME/.config/bin/toggle-keyboard-layout.sh
+set $toggle-touchpad $HOME/.config/bin/toggle-touchpad.sh
 
 # In order for XDG_DESKTOP service to start
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
@@ -66,10 +68,11 @@ bindsym $mod+d exec wofi --show drun --style $HOME/.config/wofi/wofi-drun-style.
 bindsym $mod+Shift+d exec wofi --show run --style $HOME/.config/wofi/wofi-drun-style.css
 bindsym $mod+Shift+a exec makoctl dismiss
 bindsym XF86SelectiveScreenshot exec slurp | grim -g - - | tee ~/Pictures/$(date +%s).png | wl-copy
-bindsym XF86Display $reset-displays
+bindsym XF86Display exec $reset-displays
+bindsym $mod+Space exec $toggle-keyboard-layout
 
 # Toggle touchpad with F11
-bindsym F11 exec $HOME/.bin/toggle-touchpad.sh
+bindsym F11 exec $toggle-touchpad
 
 # Lock screen
 bindsym $mod+Shift+n exec $lock
