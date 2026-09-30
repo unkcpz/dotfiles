@@ -45,4 +45,5 @@
   bind
   firefox
   opencode
+  opam
 ])
