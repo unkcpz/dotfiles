@@ -15,12 +15,15 @@ exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG
 exec systemctl --user start xdg-desktop-portal xdg-desktop-portal-wlr
 
 
+# Gaming mode ;) TODO (jyu) should be exec only when the service is not there.
 # dpms management
 exec_always swayidle -w \
   timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
   timeout 800 '$lock' \
   timeout 1000 'systemctl suspend' \
   before-sleep '$lock'
+# turnoff the eye protection
+exec_always wlsunset -l 47.37 -L 8.55 -t 3000 # zurich 47.37/8.55
 
 # layout
 default_border none
@@ -53,7 +56,6 @@ exec $browser
 exec sleep 5; systemctl --user start kanshi.service
 exec swaybg -i $bg_image -m fill
 exec nm-applet
-exec wlsunset -l 47.37 -L 8.55 -t 3000 # zurich 47.37/8.55
 exec waybar > $HOME/.cache/waybar.log 2>&1
 exec xremap $xremap
 
